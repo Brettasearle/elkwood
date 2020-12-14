@@ -30,6 +30,15 @@ header {
   font-size: 24px;
 }
 
+h2 { 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5ch;
+  color: #fff;
+  text-shadow: 1px 1px black, 1px 1px black, 1px 1px black;
+}
+
 .about {
   display: flex;
   justify-content: center;
@@ -45,14 +54,14 @@ header {
   border-right: none;
 }
 
+
 p {
   max-width: 50ch;
   color: white;
   padding: 3ch;
   font-size: 22px;
   text-shadow: 1px 1px black, 1px 1px black, 1px 1px black;
-  
-  
+
 }
 
 /* carousel */
@@ -95,7 +104,7 @@ p {
 .pic-ctn > img {
   position: absolute;
   top: 0;
-  left: calc(50% - 100px);
+  left: calc(50% - 200px);
   opacity: 0;
   animation: display 10s infinite;
 }
@@ -125,14 +134,13 @@ img:nth-child(5) {
 /* footer */
 
 footer {
-  margin-top: 10vh;
+  margin-top: 8vh;
   background-color: #606163;
   color: #fff;
   width: 100% 100vh; /*Not sure why this works play with it a little */
   padding: 2.5em;
   display: flex;
-  justify-content: space-evenly;
-  
+  justify-content: space-between;
 }
 
 ul {
@@ -155,3 +163,15 @@ a:hover {
   text-decoration: none;
   color: greenyellow;
 }
+
+/* form*/
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  border: solid black 1px;
+  background-color: blanchedalmond;
+
+}
+
+
