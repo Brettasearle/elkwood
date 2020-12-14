@@ -1,0 +1,157 @@
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(360deg, black 1%, transparent 75%),url('../assets/vic-port.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 24px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vh;
+  border: solid white 5px ;
+  max-width: 50ch;
+  margin: auto;
+  margin-top: 30ch;
+  border-left: none;
+  border-right: none;
+}
+
+p {
+  max-width: 50ch;
+  color: white;
+  padding: 3ch;
+  font-size: 22px;
+  text-shadow: 1px 1px black, 1px 1px black, 1px 1px black;
+  
+  
+}
+
+/* carousel */
+
+.pic-ctn {
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 15vh;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+
+/* all the certifications */
+.legal {
+  margin-top: 40ch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* footer */
+
+footer {
+  margin-top: 10vh;
+  background-color: #606163;
+  color: #fff;
+  width: 100% 100vh; /*Not sure why this works play with it a little */
+  padding: 2.5em;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:link,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color:white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: greenyellow;
+}
