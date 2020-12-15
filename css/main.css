@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  
 }
 
 body {
@@ -136,21 +138,32 @@ img:nth-child(5) {
 footer {
   background-color: #606163;
   color: #fff;
-  width: 100% ; /*Not sure why this works play with it a little */
+  width: 100% ;
   padding: 2.5em;
-  display: flex;
-  justify-content: space-between;
+  display: flex;  
 }
+
 
 ul {
   list-style-type: none;
+  margin: auto;
+  
 }
+
+
 
 a,
 a:link,
 a:focus,
 a:active {
   text-decoration: none;
+  color:white;
+  border: white 3px solid;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bolder;
+  transition: all .3s;
 }
 
 a:visited {
@@ -160,24 +173,37 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  color: greenyellow;
+  color:
+  color: #fff;
+  transform: scale(1.1);
 }
+/* try to get rid of the box around the instagram logo */
+i:hover {
+  text-decoration: none;
+  color:
+  color: #fff;
+  transform: scale(1.2);
+}
+
 
 /* form*/
 
 .form-box {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
+  /* make the form look good */
   border: solid black 1px;
   background-color: blanchedalmond;
-
 }
+
 
 
 /* gallery stuff to keep everything in groups of 3 in desktop */
 
 .built { 
-  padding: .5vw;
+  padding: 1.5vw;
   font-size: 0;
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
@@ -186,15 +212,13 @@ a:hover {
   flex-flow: row wrap; 
   display: -webkit-box;
   display: flex;
-  
-  
 }
 .built div { 
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto; 
   width: 400px; 
-  margin: .5vw; 
+  margin: 1.5vw; 
   border: 3px solid white;
   padding: 2px;
   
@@ -212,5 +236,8 @@ a:hover {
 .more { 
   display: flex;
   justify-content: center;
+  max-width: 24ch;
+  margin: auto;
   padding-top: 30vh;
 }
+
