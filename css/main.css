@@ -153,7 +153,8 @@ footer {
   color: #fff;
   width: 100% ;
   padding: 2.5em;
-  display: flex;  
+  display: flex; 
+  font-size: 20px;
 }
 
 
@@ -221,20 +222,24 @@ i:hover {
 form {
   display: flex;
   flex-direction: column;
-  max-width: 40ch;
+  max-width: 25ch;
   margin: auto;
   font-size: 25px;
   color: #fff;
-  
-  
+
 }
+label {
+  margin-top: 10px;
+}
+
+
 .submit {
   margin-top: 10px;
   display: flex;
   justify-content: center;
   align-self: center;
-  width: min-content;
-  
+  padding: 10px;
+  border-radius: 10%;
 }
 
 textarea {

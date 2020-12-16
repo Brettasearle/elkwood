@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@300&display=swap');
 
 /* Font */
-body {
+body, .submit{
   font-family: 'Merriweather', serif;
 }
 
-h1, h2, h3, h4, h5, h6, form, p{
+h1, h2, h3, h4, h5, h6, form, p, footer {
   font-family: 'Raleway', sans-serif;
 }
