@@ -3,8 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-  
 }
 
 body {
@@ -63,10 +61,8 @@ h2 {
   margin-top: 30ch;
   border-left: none;
   border-right: none;
-  /* mess wiht this */
   background-image: linear-gradient(360deg, #283048 20%, transparent 100%),url('assets/unnamed.png');
 }
-
 
 p {
   max-width: 50ch;
@@ -76,11 +72,13 @@ p {
   font-size: 26px;
   text-shadow: 1px 1px black, 1px 1px black, 1px 1px black;
   font-weight: bold;
-
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
 }
 
 /* carousel */
-
 .pic-ctn {
   width: 100%;
   height: 200px;
@@ -144,11 +142,8 @@ img:nth-child(5) {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
 /* footer */
-
 footer {
   background: linear-gradient(#000000, #434343);
   color: #fff;
@@ -158,13 +153,10 @@ footer {
   font-size: 20px;
 }
 
-
 ul {
   list-style-type: none;
   margin: auto;
 }
-
-
 
 a,
 a:link,
@@ -187,11 +179,10 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  color:
   color: #fff;
   transform: scale(1.1);
 }
-/* try to get rid of the box around the instagram logo */
+
 i:hover {
   text-decoration: none;
   color: #fff;
@@ -202,9 +193,7 @@ i:hover {
   border: none;
   border-style: none;
 }
-
 /* form*/
-
 .form-box {
   display: flex;
   justify-content: center;
@@ -221,12 +210,11 @@ form {
   margin: auto;
   font-size: 25px;
   color: #fff;
-
 }
+
 label {
   margin-top: 10px;
 }
-
 
 .submit {
   margin-top: 10px;
@@ -251,13 +239,7 @@ textarea {
 .copyright {
   font-size: 10px;
 }
-
-
-
-
-
 /* gallery stuff to keep everything in groups of 3 in desktop */
-
 .built { 
   padding: 1.5vw;
   font-size: 0;
@@ -276,8 +258,7 @@ textarea {
   width: 400px; 
   margin: 1.5vw; 
   border: 3px solid #E6D6AB;
-  padding: 2px;
-  
+  padding: 2px; 
 }
 .built div img { 
   width: 100%; 
@@ -286,7 +267,6 @@ textarea {
 @media screen and (max-width: 400px) {
   header div { margin: 0; }
   header { padding: 0; }
-  
 }
 /* see more gallery */
 .more { 
@@ -297,32 +277,30 @@ textarea {
   padding-top: 30vh;
 }
 
-
 @media (max-width: 400px) {
   p {
     font-size: 20px;
     overflow-x: hidden;
-    
   }
+
   h1 {
     font-size: 25px;
     overflow-x: hidden;
-    
-
   }
+
   body {
     margin: auto;
     overflow-x: hidden;
-    
   }
 
   .pic-ct {
     overflow-x: hidden;
   }
+
   form {
     width: 20ch;
-    
   }
+
   .more {
     margin-top: 20vh;
   }
@@ -330,25 +308,29 @@ textarea {
   .legal {
     width: 350px;
     height: 100px;
-}
+  }
 
-.legal img {
+  .legal img {
     width: 100%;
     height: auto;
-}
-
+  }
 /* resize images for carosl*/
 .pic-ctn {
   width: 350px;
-  height: 80px;
+  height: 500px;
   margin-left: auto;
+  overflow-x: hidden;
 }
 
 .pic-ctn img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   padding-left: 5vw;
+  overflow-x: hidden;
 }
 
+.more {
+  padding-top: 1px;
+}
 
 }
