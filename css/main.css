@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: linear-gradient(360deg, black 5%, transparent 75%),url('../assets/vic-port.webp');
+  background-image: linear-gradient(360deg, #283048 5%, transparent 70%),url('../assets/vic-port.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@ h1 {
   justify-content: center;
   text-align: center;
   margin-top: 5ch;
-  color: #E4D6B5;
+  color: #fff;
   text-shadow: 1px 1px black, 1px 1px black, 1px 1px black;
 }
 
@@ -58,20 +58,21 @@ h2 {
   flex-direction: column;
   margin-top: 10vh;
   border: solid #E6D6AB 3px ;
-  max-width: 90%;
-  margin: auto;
+  max-width: 100%;
+  margin: 0;
   margin-top: 30ch;
   border-left: none;
   border-right: none;
   /* mess wiht this */
-  background-image: linear-gradient(360deg, #283048 10%, transparent 90%),url('assets/unnamed.png');
+  background-image: linear-gradient(360deg, #283048 20%, transparent 100%),url('assets/unnamed.png');
 }
 
 
 p {
   max-width: 50ch;
   color: white;
-  padding: 3ch;
+  padding-top: 3ch;
+  padding-bottom: 3ch;
   font-size: 26px;
   text-shadow: 1px 1px black, 1px 1px black, 1px 1px black;
   font-weight: bold;
@@ -81,7 +82,7 @@ p {
 /* carousel */
 
 .pic-ctn {
-  width: 100vw;
+  width: 100%;
   height: 200px;
 }
 
@@ -110,7 +111,7 @@ p {
 
 .pic-ctn {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 300px;
   margin-top: 15vh;
 }
@@ -161,7 +162,6 @@ footer {
 ul {
   list-style-type: none;
   margin: auto;
-  
 }
 
 
@@ -201,11 +201,7 @@ i:hover {
   text-decoration: none;
   border: none;
   border-style: none;
-  
 }
-
-
-
 
 /* form*/
 
@@ -216,7 +212,6 @@ i:hover {
   border-top: solid #E6D6AB 3px;
   background: linear-gradient(#283048, #000000);
   height: 30vh;
-  
 }
 
 form {
@@ -251,6 +246,10 @@ textarea {
   border-radius: 4px;
   background-color: #f8f8f8;
   resize: none;
+}
+
+.copyright {
+  font-size: 10px;
 }
 
 
@@ -298,3 +297,54 @@ textarea {
   padding-top: 30vh;
 }
 
+
+@media (max-width: 400px) {
+  p {
+    font-size: 20px;
+    overflow-x: hidden;
+    
+  }
+  h1 {
+    font-size: 25px;
+    overflow-x: hidden;
+    
+
+  }
+  body {
+    margin: auto;
+    overflow-x: hidden;
+  }
+
+  .pic-ct {
+    overflow-x: hidden;
+  }
+  form {
+    width: 20ch;
+    
+  }
+  .more {
+    margin-top: 20vh;
+  }
+  /* resize legal */
+  .legal {
+    width: 350px;
+    height: 100px;
+}
+
+.legal img {
+    width: 100%;
+    height: auto;
+}
+
+/* resize images for carosl*/
+.pic-ctn {
+  width: 350px;
+  height: 80px;
+  margin-left: auto;
+}
+
+.pic-ctn img {
+  width: 100%;
+  height: 400px;
+}
+}
